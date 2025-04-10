@@ -92,4 +92,20 @@ class rectangle:
 for area in [triangle(), rectangle()]:
     print(area.area(10,20))
 
-    
+
+# Polymorphism challenge 
+class car:
+    def move(self):
+        print("The car is driving.")
+
+class plane:
+    def move(self):
+        print("The plane is flying.")
+
+class bicycle:
+    def move(self):
+        print("The bicycle is pedaling.")
+
+
+for vehicle in [car(), plane(), bicycle()]:
+    vehicle.move()
